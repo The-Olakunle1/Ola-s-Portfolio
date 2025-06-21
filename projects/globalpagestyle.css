@@ -1,7 +1,7 @@
 :root {
   --color-title: #003144;
   --color-body: #4C595D;
-  --font-primary: 'Inter', sans-serif;
+  --font-primary: 'Satoshi', sans-serif;
   --color-link: #004EEB;
 }
 
@@ -9,7 +9,7 @@ body{
   margin-left: 300px;
   margin-right: 300px;
   margin-top: 40px;
-  font-family: inter, sans-serif;
+  font-family: 'Satoshi', sans-serif;
   background-color: #ffffff;
 }
 
