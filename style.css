@@ -154,3 +154,33 @@ p{
 .footer a:hover {
   text-decoration: underline;
 }
+
+.project-disabled {
+  color: #aaa;
+  cursor: not-allowed;
+  text-decoration: none;
+  position: relative;
+}
+
+.project-disabled .tooltip {
+  visibility: hidden;
+  width: 260px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -130px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.95em;
+}
+
+.project-disabled:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
