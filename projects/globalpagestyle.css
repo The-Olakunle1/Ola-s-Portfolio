@@ -13,6 +13,21 @@ body{
   background-color: #ffffff;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
+.modal-content {
+  height: 60vh;
+  max-height: 60vh;
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+.modal-content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
 p{
   margin: 0;
   padding: 0;
