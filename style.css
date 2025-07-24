@@ -184,3 +184,38 @@ p{
   visibility: visible;
   opacity: 1;
 }
+
+#mobile-blocker {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  color: #222;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+#mobile-blocker .mobile-blocker-content {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 1024px) {
+  #mobile-blocker {
+    display: flex;
+  }
+  body > *:not(#mobile-blocker) {
+    display: none !important;
+  }
+}
