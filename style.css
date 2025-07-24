@@ -5,6 +5,11 @@
   --color-link: #004EEB;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   margin-left: 300px;
   margin-right: 300px;
@@ -195,13 +200,9 @@ p{
   height: 100vh;
   background: #fff;
   color: #222;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   font-size: 1.5rem;
   padding: 2rem;
-  /* Ensure perfect centering */
-  display: flex;
 }
 
 #mobile-blocker .mobile-blocker-content {
@@ -227,6 +228,8 @@ p{
 @media (max-width: 1024px) {
   #mobile-blocker {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
   body > *:not(#mobile-blocker) {
     display: none !important;
