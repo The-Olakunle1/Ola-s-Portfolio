@@ -208,11 +208,11 @@ p{
 
 #mobile-blocker .mobile-blocker-content {
   max-width: 500px;
-  margin: 0 auto;
+  margin-left: 24px;
+  margin-left: 24px;
   border-radius: 12px;
   box-shadow: none;
-  display: flex;
-  flex-direction: column;
+  display: block;
   justify-content: center;
   align-items: center;
   text-align: center;
