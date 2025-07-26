@@ -202,7 +202,8 @@ p{
   color: #222;
   text-align: center;
   font-size: 1.5rem;
-  
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 #mobile-blocker .mobile-blocker-content {
