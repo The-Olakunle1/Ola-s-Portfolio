@@ -198,19 +198,33 @@ p{
   display: flex;
   gap: 24px;
   padding: 20px;
+  height: 400px;
+  align-items: flex-start;
 }
 
-.carousel-image {
+.carousel-image-container {
   min-width: 600px;
-  height: 100%;
-  object-fit: cover;
+  height: 360px;
   border-radius: 8px;
   border: 1px solid #E5E7EB;
   cursor: pointer;
   transition: transform 0.2s;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
 }
 
-.carousel-image:hover {
+.carousel-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  display: block;
+}
+
+.carousel-image-container:hover {
   transform: scale(1.02);
 }
 
@@ -231,6 +245,25 @@ p{
 
 .carousel-container::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* Custom scrollbar for image containers */
+.carousel-image-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.carousel-image-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.carousel-image-container::-webkit-scrollbar-thumb {
+  background: #f9f9f9;
+  border-radius: 3px;
+}
+
+.carousel-image-container::-webkit-scrollbar-thumb:hover {
+  background: #e5e5e5;
 }
 
 .modal {
