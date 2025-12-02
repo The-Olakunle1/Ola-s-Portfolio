@@ -21,7 +21,10 @@
 </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, nocache">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, nocache">
+  <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, nocache">
+  <meta http-equiv="X-Robots-Tag" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, nocache">
   <title>Olakunle Alabi's Portfolio | Product Designer</title>
   <link rel="icon" type="image/jpeg" href="projects/images/favicon.jpeg">
   <link rel="shortcut icon" type="image/jpeg" href="projects/images/favicon.jpeg">
@@ -33,7 +36,15 @@
 
 
 </head>
-<body>
+<body class="light-theme">
+  <div class="theme-toggle-wrapper">
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+      <span class="theme-toggle-track" aria-hidden="true">
+        <span class="theme-toggle-thumb"></span>
+      </span>
+      <span class="theme-toggle-label">Light mode</span>
+    </button>
+  </div>
   <div id="mobile-blocker">
     <div class="mobile-blocker-content">
       Heads up! this portfolio’s had one too many coffees and only runs on desktop. Pop over to your laptop to see it in full glory 😊
@@ -41,25 +52,26 @@
   </div>
   <section class="hero-section">
     <h1 class="hero-title">
-      Hey, I'm Olakunle 👋
+      Hey, I'm Ola 👋🏾
     </h1>
     <p class="hero-description">
       Product designer @MPB based in <span class="current-location"> Brighton, England.</span>
-      Welcome to my Personal website.
+      
 
     <p class="hero-body">
-      I am obsessed with the way the web works and enjoy crafting beautiful and friendly experience for real people.
-
-      I currently am a Product Designer at <a class="current-work" href="https://www.mpb.com" target="_blank">MPB</a> - The largest global platform to buy, sell, and trade used photo & video kit, where I design solutions for millions of users across 10 countries in two continents. 
-
-      I thrive in cross-functional collaboration, creating intuitive, scalable products that deliver real impact.
-    </p>
-    <p class="hero-body">
-      I combine qualitative, quantitative research and,   behavioural insights to deeply understand user needs and guide design decisions.
+      I'm a generalist/PM hybrid type of Product Designer. I am obsessed with the way the web works and crafting great user experiences.
+      I am most motivated when I believe in the problem I'm solving for and in teams who value design, cross-functional collaboration and are impact driven.
     </p>
 
     <p class="hero-body">
-       My work is driven by both user impact and business goals, ensuring the solutions I create are friendly, effective and grounded in real evidence.
+      I'm currently a UX Designer at <a class="current-work" href="https://www.mpb.com" target="_blank" rel="noopener noreferrer">MPB.com</a> where I create solutions that empower creatives across 13 countries. I also co-founded at <a class="current-work" href="https://swap-space.com" target="_blank" rel="noopener noreferrer">Swap-space.com</a>, where I lead product and design, empowering people to travel affordably through home swapping.
+    </p>
+    <p class="hero-body">
+      I combine qualitative, quantitative research and behavioral insights to deeply understand user needs and guide design decisions. My work is driven by both user impact and business goals, ensuring the solutions I create are friendly, effective and grounded in real evidence.
+    </p>
+
+    <p class="hero-body">
+      I have a range of skills that span user research, UX and interaction design, conversion rate optimization, and frontend development using HTML, TailwindCSS, and ReactJs allowing me to collaborate effectively across disciplines and bring ideas to life with precision.
     </p>
 
     <p class="hero-body">
@@ -67,8 +79,7 @@
    </p>
 
    <p class="hero-body">
-    When I'm not working, you'll find me cycling along the Brighton seafront, camera in hand. 🚴🏾‍♂️🚴🏾‍♂️ 📸
- </p>
+    When I'm not building, you'll find me cycling along the Brighton seafront, camera in hand. </p>
   </section>
 
   <section class="projects-section">
@@ -178,6 +189,35 @@
    </a> 
   </div>
 
+  <script>
+    (function() {
+      var toggle = document.querySelector('[data-theme-toggle]');
+      if (!toggle) {
+        return;
+      }
+
+      var body = document.body;
+      var label = toggle.querySelector('.theme-toggle-label');
+      var storedTheme = localStorage.getItem('theme');
+      var activeTheme = storedTheme === 'dark' ? 'dark' : 'light';
+
+      applyTheme(activeTheme);
+
+      toggle.addEventListener('click', function() {
+        activeTheme = activeTheme === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('theme', activeTheme);
+        applyTheme(activeTheme);
+      });
+
+      function applyTheme(theme) {
+        body.classList.remove('light-theme', 'dark-theme');
+        body.classList.add(theme + '-theme');
+        toggle.setAttribute('aria-pressed', theme === 'dark');
+        label.textContent = theme === 'dark' ? 'Dark mode' : 'Light mode';
+        document.documentElement.style.setProperty('color-scheme', theme === 'dark' ? 'dark' : 'light');
+      }
+    })();
+  </script>
   <script defer src="https://vercel.com/analytics/script.js"></script>
 </body>
 </html>
