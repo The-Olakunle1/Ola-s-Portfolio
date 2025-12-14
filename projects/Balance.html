@@ -25,6 +25,9 @@
   <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, nocache">
   <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, nocache">
   <meta http-equiv="X-Robots-Tag" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, nocache">
+  <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+  <link rel="shortcut icon" type="image/jpeg" href="images/favicon.jpeg">
+  <link rel="apple-touch-icon" href="images/favicon.jpeg">
   <title>MPB: Sell Balance</title>
   <link rel="stylesheet" href="globalpagestyle.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +36,15 @@
 
 
 </head>
-<body>
+<body class="light-theme">
+  <div class="theme-toggle-wrapper">
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+      <span class="theme-toggle-track" aria-hidden="true">
+        <span class="theme-toggle-thumb"></span>
+      </span>
+      <span class="theme-toggle-label">Light mode</span>
+    </button>
+  </div>
   <a href="../index.html" class="action-button">
     go back
   </a>
@@ -355,7 +366,7 @@
           LinkedIn
         </a> 
       
-        <a href="https://drive.google.com/file/d/1hYcCsP1S5SYkv0PbiqcjN5qZPnqZzcW7/view?usp=sharing
+        <a href="https://drive.google.com/file/d/1GpUEwzLhhN7H9EU-9IAqVrZh7BzELQi0/view?usp=sharing
         " target="_blank" rel="noopener noreferrer">
          Resume
         </a> 
@@ -369,5 +380,6 @@
         go back
       </a>
     </section>
+  <script defer src="../theme-toggle.js"></script>
 </body>
 </html>

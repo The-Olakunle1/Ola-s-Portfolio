@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    (function() {
+      var isMaintenancePage = /\/maintenance\.html$/.test(location.pathname);
+      fetch('/maintenance.json', { cache: 'no-store' })
+        .then(function(r){ return r.ok ? r.json() : Promise.reject(); })
+        .then(function(cfg){ if (cfg && cfg.enabled && !isMaintenancePage) { location.replace('/maintenance.html'); } })
+        .catch(function(){});
+    })();
+  </script>
+
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Cs Fs Pe Rs Ms capture Ve calculateEventProperties Ds register register_once register_for_session unregister unregister_for_session zs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty js As createPersonProfile Ns Is Us opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Os debug I Ls getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_R1gWAZHlS52IFGR0a8p0vGoJJO91FSMugCsXes7UJvl', {
+        api_host: 'https://eu.i.posthog.com',
+        defaults: '2025-05-24',
+        person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
+    })
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, nocache">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, nocache">
+  <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, nocache">
+  <meta http-equiv="X-Robots-Tag" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, nocache">
+  <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+  <link rel="shortcut icon" type="image/jpeg" href="images/favicon.jpeg">
+  <link rel="apple-touch-icon" href="images/favicon.jpeg">
+  <title>Self serve returns</title>
+  <link rel="stylesheet" href="globalpagestyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body class="light-theme">
+  <div class="theme-toggle-wrapper">
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+      <span class="theme-toggle-track" aria-hidden="true">
+        <span class="theme-toggle-thumb"></span>
+      </span>
+      <span class="theme-toggle-label">Light mode</span>
+    </button>
+  </div>
+  <a href="../index.html" class="action-button">
+    go back
+  </a>
+
+  <section class="hero-section">
+    <h1 class="hero-title">
+      <span class="naming">Self serve returns 
+      Phase 2
+     </span> <br> Empowering customers to complete returns end-to-end, independently.
+    </h1>
+    
+    <div class="project-detail">
+      <div class="detail">
+        <p class="detail-title">
+          Role
+        </p>
+        <p class="detail-body">
+          Product Designer
+        </p>
+      </div>
+
+      <div class="detail">
+        <p class="detail-title">
+          Duration
+        </p>
+        <p class="detail-body">
+          3 months
+        </p>
+      </div>
+
+      <!--<div class="detail">
+        <p class="detail-title">
+          Team
+        </p>
+        <p class="detail-body">
+          Product manager, UI Designer,Engineers, Scrum master,Content designer, Localisation designers.
+        </p>
+      </div>
+    -->
+
+     
+   <!-- </div>
+    <div class="tl-dr">
+      <button class="action-button" onclick="openModal()">
+        Quick summary (1 min read)
+      </button>
+
+      <div id="tldrModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2 class="goal-title">Summary</h2>
+          <p class="goal-body">I led the UX design of MPB’s self-serve returns platform, giving customers the power to initiate, track, and complete returns on their own, reducing reliance on Customer Experience and improving satisfaction.
+          </p>
+
+          <p class="goal-body">Without a self-serve option, returns were the top driver of negative feedback and support volume. We identified a clear opportunity to reduce inbound requests and improve the post-purchase experience by streamlining the returns process.
+          </p>
+
+          <p class="goal-body">Our approach was insight-driven and collaborative, combining behavioral data, user research, and sentiment analysis to uncover pain points and shape solutions. Working closely with the talented product, research, content, and Customer experience teams, we designed a seamless returns journey across markets and channels.
+          </p>
+
+          <p class="goal-body">Key features included account-based return initiation, unified workflows, and AI-powered support paths. We validated the solution through iterative testing and continuous feedback.
+          </p>
+
+          <h4 class="goal-title">
+            What's the impact?
+          </h4>
+
+          <p class="goal-body">
+            • 	Steady returns flow adoption, 766 customers initiated returns via the new self serve flow within the first 3 weeks <br><br>
+        • 	61% of returns resolved without an agent's intervention <br><br>
+        • 	Customer experience team workload reduced, freeing time to focus on complex and high value issues<br><br>
+        • CSAT is consistently high with 94.1% for Self serve returns vs 77.8% for the legacy returns process.<br><br>
+        • Time to resolve and close a support ticket dropped from over 5 hours to 3hours 25 minutes within the first 3 weeks of launching Self serve returns.<br><br>
+        • Average replies per ticket halved from 5 to 2.6 within the first week - which means the Customer experience team are getting enough information upfront regarding the customer's return.<br><br>
+        • Returns volume and values remained within expected historical ranges, indicating no operational disruption or spike in users return.<br><br></p>
+        
+
+        </div>
+      </div>
+-->
+      <script>
+        function openModal() {
+          document.getElementById("tldrModal").style.display = "block";
+          document.body.classList.add("modal-open");
+        }
+
+        function closeModal() {
+          document.getElementById("tldrModal").style.display = "none";
+          document.body.classList.remove("modal-open");
+        }
+
+        window.onclick = function(event) {
+          if (event.target == document.getElementById("tldrModal")) {
+            closeModal();
+          }
+        }
+      </script>
+
+    </div>
+  </section>
+
+  <div class="case-study-layout">
+    <aside class="page-index" aria-label="Page sections">
+      <p class="index-label">
+        ↪ Index
+      </p>
+      <ul class="index-list">
+        <li><a class="index-link" href="#background">Background</a></li>
+        <li><a class="index-link" href="#goal">The goal</a></li>
+        <li><a class="index-link" href="#what-we-delivered">What we delivered</a></li>
+      </ul>
+    </aside>
+
+    <div class="case-study-body">
+
+  <section class="goals-section">
+
+    <div class="goals-wrapper">
+      <div class="goal-problem-container">
+
+        <p class="goal-title" id="background" data-index-section>
+            Background
+        </p>
+
+        <p class="goal-body">
+    After launching <a href="self-serve-returns.html" target="_blank" rel="noopener noreferrer">Self-Serve Returns Phase 1</a> in 13 markets, we set out to release Phase 2, a fully autonomous returns experience that would eliminate the need for Customer Experience interaction entirely.
+     While Phase 1 enabled customers to initiate returns on-platform, they still needed to engage with CE through Intercom to complete the process. Phase 2 would close this gap by allowing users to choose their preferred resolution (exchange or refund) and complete the entire journey independently on-platform.
+    This would improve customer experience through faster resolutions and greater control, while freeing the CE team to focus on complex, high-value issues.
+        </p>
+        <img class="project-img" src="images/Exchange page.png" alt="Exchange flow preview">
+      </div>
+
+
+    <div class="goals-wrapper">
+      <div class="goal-problem-container">
+
+        <p class="goal-title" id="goal" data-index-section>
+            The goal
+        </p>
+
+        <p class="goal-body">
+          We aimed to enable customers to complete their entire returns journey on-platform without Customer Experience intervention, giving them full autonomy to choose between a refund or exchange.
+Beyond reducing friction, we aimed to introduce delight into the exchange flow transforming what's typically a frustrating experience into an opportunity for customers to discover their next perfect item and stay engaged with MPB.
+        </p>
+      </div>
+</section>
+    <!-- Solution highlights: what we delivered in Phase 2 -->
+    <section class="solution-section">
+      <div class="carousel-container">
+        <h2 class="h2" id="what-we-delivered" data-index-section>What we delivered</h2>
+
+        <!-- Exchange selection flow -->
+        <h4 class="goal-title">Self service exchange selection</h4>
+        <div class="results-section">
+          <p class="project-title">
+            Customers who are returning an item and have opted to get an exchange item can now independently select a replacement on-platform without any help from our Customer Experience team.<br><br>
+          </p>
+          <img src="images/Returns phase 2.gif" alt="Returns flow demonstration" class="returns-flow-gif">
+        </div>
+
+        <!-- Flexibility to switch outcomes -->
+        <h4 class="goal-title">Flexibility to switch from exchange to refund</h4>
+        <div class="results-section">
+          <p class="project-title">
+            We designed for scenarios where customers started the exchange journey but changed their mind and wanted a refund instead.<br><br>
+          </p>
+          <img src="images/Get a refund.gif" alt="Returns flow demonstration" class="returns-flow-gif">
+        </div>
+
+
+         <!-- Return review page -->
+         <h4 class="goal-title">Final review with full transparency</h4>
+         <div class="results-section">
+           <p class="project-title">
+            We designed the review page to give customers complete visibility before they commit. The page clearly separates what they're returning from what they're getting in exchange, with a summary panel that breaks down the financial outcome. When customers are owed money back, we highlight the refund amount and explain when they'll receive it, building confidence at this critical decision point.<br><br>
+           </p>
+           <img src="images/Review your return.png" alt="Returns flow demonstration" class="returns-flow-gif">
+         </div>
+
+
+          <!-- Returns creation page -->
+          <h4 class="goal-title">Guiding customers after confirmation
+          </h4>
+          <div class="results-section">
+            <p class="project-title">
+              Once the return was placed, we designed a confirmation page that clearly outlined what happens next and provided actionable guidance for packaging and shipping. We included drop-off details, a step-by-step packing guide with manufacturer recommendations, and a summary of their return for reference. This reduced confusion and support queries by ensuring customers had everything they needed to complete their return successfully.
+              <br><br>
+            </p>
+            <img src="images/Returns creation.png" alt="Returns flow demonstration" class="returns-flow-gif">
+          </div>
+      </div>
+    </section>
+
+
+
+      <section></section>
+      <div class="footer">
+        <a href="https://www.linkedin.com/in/olakunlealabi/" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a> 
+      
+        <a href="https://drive.google.com/file/d/1GpUEwzLhhN7H9EU-9IAqVrZh7BzELQi0/view?usp=sharing
+        " target="_blank" rel="noopener noreferrer">
+         Resume
+        </a> 
+      
+        <a href="https://medium.com/@The_Olakunle" target="_blank" rel="noopener noreferrer">
+          Medium
+         </a> 
+        </div>
+
+      <a href="../index.html" class="action-button">
+        go back
+      </a>
+    </section>
+
+    </div>
+  </div>
+<script>
+  // Highlight the current index item while scrolling
+  (function() {
+    var sectionEls = document.querySelectorAll('[data-index-section]');
+    var indexLinks = Array.from(document.querySelectorAll('.index-link'));
+    if (!sectionEls.length || !indexLinks.length || !('IntersectionObserver' in window)) return;
+
+    var linkMap = indexLinks.reduce(function(map, link) {
+      var targetId = (link.getAttribute('href') || '').replace('#', '');
+      if (targetId) map[targetId] = link;
+      return map;
+    }, {});
+
+    var setActive = function(id) {
+      indexLinks.forEach(function(link) {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+      });
+    };
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var id = entry.target.getAttribute('id');
+          if (id && linkMap[id]) setActive(id);
+        }
+      });
+    }, {
+      rootMargin: '-35% 0px -50% 0px',
+      threshold: [0, 0.25, 0.5, 0.75, 1]
+    });
+
+    sectionEls.forEach(function(section) { observer.observe(section); });
+  })();
+</script>
+  <script defer src="../theme-toggle.js"></script>
+</body>
+</html>

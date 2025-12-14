@@ -25,6 +25,9 @@
   <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, nocache">
   <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, nocache">
   <meta http-equiv="X-Robots-Tag" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, nocache">
+  <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+  <link rel="shortcut icon" type="image/jpeg" href="images/favicon.jpeg">
+  <link rel="apple-touch-icon" href="images/favicon.jpeg">
   <title>Self serve returns</title>
   <link rel="stylesheet" href="globalpagestyle.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,14 +36,24 @@
 
 
 </head>
-<body>
+<body class="light-theme">
+  <div class="theme-toggle-wrapper">
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+      <span class="theme-toggle-track" aria-hidden="true">
+        <span class="theme-toggle-thumb"></span>
+      </span>
+      <span class="theme-toggle-label">Light mode</span>
+    </button>
+  </div>
   <a href="../index.html" class="action-button">
     go back
   </a>
 
   <section class="hero-section">
     <h1 class="hero-title">
-      Enhancing customer autonomy through a seamless self-serve returns platform.
+      <span class="naming">Self serve returns 
+      Phase 1
+     </span> <br> Reducing customer contact by enabling seamless, on-platform returns initiation
     </h1>
     
     <div class="project-detail">
@@ -62,7 +75,7 @@
         </p>
       </div>
 
-      <div class="detail">
+      <!--<div class="detail">
         <p class="detail-title">
           Team
         </p>
@@ -70,9 +83,10 @@
           Product manager, UI Designer,Engineers, Scrum master,Content designer, Localisation designers.
         </p>
       </div>
+    -->
 
      
-    </div>
+   <!-- </div>
     <div class="tl-dr">
       <button class="action-button" onclick="openModal()">
         Quick summary (1 min read)
@@ -110,7 +124,7 @@
 
         </div>
       </div>
-
+-->
       <script>
         function openModal() {
           document.getElementById("tldrModal").style.display = "block";
@@ -132,26 +146,47 @@
     </div>
   </section>
 
+  <div class="case-study-layout">
+    <aside class="page-index" aria-label="Page sections">
+      <p class="index-label">
+        ↪ Index
+      </p>
+      <ul class="index-list">
+        <li><a class="index-link" href="#background">Background</a></li>
+        <li><a class="index-link" href="#goal">The goal</a></li>
+        <li><a class="index-link" href="#problem">The problem</a></li>
+        <li><a class="index-link" href="#solution-overview">Solution overview</a></li>
+        <li><a class="index-link" href="#what-we-delivered">What we delivered</a></li>
+        <li><a class="index-link" href="#challenges">Challenges</a></li>
+        <li><a class="index-link" href="#impact">What's the impact?</a></li>
+        <li><a class="index-link" href="#ui-snapshots">UI snapshots</a></li>
+      </ul>
+    </aside>
+
+    <div class="case-study-body">
+
   <section class="goals-section">
 
     <div class="goals-wrapper">
       <div class="goal-problem-container">
 
-        <p class="goal-title">
+        <p class="goal-title" id="background" data-index-section>
             Background
         </p>
 
         <p class="goal-body">
-          Before the launch of self-serve returns, customers were unable to initiate returns independently on the platform, which was the primary source of negative feedback and low NPS scores. This limitation also placed a heavy burden on the customer experience team, who had to manually troubleshoot each return and provide personalised support.
+          Before the launch of self-serve returns, customers were unable to initiate returns independently on  platform, which was the primary source of negative feedback and low NPS scores. This limitation also placed a heavy burden on the customer experience team, who had to manually troubleshoot each return and provide personalised support.
           With a clear goal to reduce this pain point, the team set out to empower users to create and manage their returns autonomously. Here’s an inside look at how we brought this vision to life.
         </p>
+
+        <img src="images/Phase 1  returns.gif" alt="Returns flow demonstration" class="returns-flow-gif">
       </div>
 
 
     <div class="goals-wrapper">
         <div class="goal-problem-container">
 
-          <p class="goal-title">
+          <p class="goal-title" id="goal" data-index-section>
               The goal
           </p>
 
@@ -162,7 +197,7 @@
 
         <div class="goal-problem-container">
 
-          <p class="goal-title">
+          <p class="goal-title" id="problem" data-index-section>
              The problem
           </p>
 
@@ -183,66 +218,36 @@
         </div>
     </div>
 
-    <div class="goals-wrapper">
-      <div class="goal-problem-container">
-
-        <p class="goal-title">
-           Challenges
-        </p>
-
-        <p class="goal-body">
-          • We had to deliver value sooner. To keep momentum and start improving the returns experience quickly, we split the work into Phase 1 and Phase 2. Phase 1 focused on delivering the most impactful self-serve capabilities early, while Phase 2 layered on more complex workflows and integrations.
-          <br><br>
-          • We needed to preserve essential human touchpoints. For some return reasons, such as faulty items, we created a hybrid process where automated workflows collected detailed information upfront before escalating to a Customer Experience advisor for resolution.<br><br>
-          • 	We were working with legacy systems. The returns infrastructure was not initially built to support self-serve functionality, so we had to design a solution robust enough to integrate with old processes without breaking them, while still accommodating new features.<br><br>
-        </p>
-
-        <p class="project-title"> These hurdles helped shape the solutions that follow</p>
-      </div>
+    
   </section>
 
     <section class="solution-section">
 
-      <h4 class="goal-title">
+      <h2 class="h2" id="solution-overview" data-index-section>
 
         Solution overview
-      </h4>
+      </h2>
       <p class="goal-body">
-        To introduce self-serve returns on the platform, we took a dual-pathway approach that addressed both the user experience and internal team efficiency.
-      </p>
+        We launched self-serve returns using a dual-pathway approach that empowered customers while supporting our internal teams. Customers could now initiate returns directly on the platform, which then routed to an enhanced Intercom chat workflow for efficient resolution.      </p>
 
-      <h4 class="goal-title">
+     <!-- <h2 class="h2" id="what-we-did" data-index-section>
 
-      What we did:
-      </h4>
+      What we did
+      </h2>
       <p class="goal-body">
       • We enabled users to initiate returns directly from the transaction page in their account.<br><br>
       • We rolled out a unified return experience across all markets, allowing users to start and complete RMA-type returns independently<br><br>
       • We created enhanced  workflows within Intercom using their AI agent (FIN) for context-aware return paths, featuring tailored conversational flows per return reason (e.g., faulty items, incompatibility, condition disputes). <br><br>
       • This streamlined data collection at the start of the return journey to reduce back-and-forth and improved the quality of information handed off to Customer Experience advisors.<br><br>  </p>
-
-    </section>
-
-    <section class="results-section">
-      <h4 class="goal-title">
-
-        What's the impact?
-      </h4>
-      <p class="goal-body">
-        • 	Steady returns flow adoption, 766 customers initiated returns via the new self serve flow within the first 3 weeks <br><br>
-        • 	61% of returns resolved without an agent's intervention <br><br>
-        • 	Customer experience team workload reduced, freeing time to focus on complex and high value issues<br><br>
-        • CSAT is consistently high with 94.1% for Self serve returns vs 77.8% for the legacy returns process.<br><br>
-        • Time to resolve and close a support ticket dropped from over 5 hours to 3hours 25 minutes within the first 3 weeks of launching Self serve returns.<br><br>
-        • Average replies per ticket halved from 5 to 2.6 within the first week - which means the Customer experience team are getting enough information upfront regarding the customer's return.<br><br>
-        • Returns volume and values remained within expected historical ranges, indicating no operational disruption or spike in users return.<br><br> 
-      </p>
-
-      <img class="nps-feedback" src="images/SS Returns metrics snapshot.png">
+      -->
 
       <div class="carousel-container">
+        <h2 class="h2" id="what-we-delivered" data-index-section>
+          What we delivered
+        </h4>
+
         <h4 class="goal-title">
-          What we shipped
+          Returns initiation from My account 
         </h4>
             <div class="results-section">
               
@@ -250,10 +255,10 @@
               Self serve returns initiation for all users within the account section. <br><br>
               </p>
               <p class="project-title">
-                Rather than contacting the customer experience team through chat or email, users can now start a return, add items, and select their preferred resolution directly within their Account section. <br><br>
+                Enabled customers to initiate returns independently in My Account, select a return reason and resolution, and continue into an optimised chat workflow <br><br>
                 </p>
 
-              <img src="images/Returns flow 1.gif" alt="Returns flow demonstration" class="returns-flow-gif">
+              <img src="images/Phase 1  returns.gif" alt="Returns flow demonstration" class="returns-flow-gif">
               
             </div>
 
@@ -261,45 +266,95 @@
             <div class="results-section">
               
               <p class="goal-body">
-              Autonomous returns resolution configuration <br><br>
+              Autonomous returns initiation from the account section <br><br>
               </p>
               <p class="project-title">
-                Users no longer need to wait for a customer experience advisors to manually configure their returns resolution. <br><br>
+                Users no loner need to reach out to a customer experience agent to initiate a return. <br><br>
                 </p>
-                • 	Users are able to find and choose a suitable exchange item or opt in for a refund<br><br>
-                • 	Configure how they want their returns to be picked up. Either home collection or Drop off<br><br>
-                • 	Review return <br><br>
-                • Returns confirmation page and see packaging steps<br><br>
+                • 	Customers can start return, choose items to return, select a return reason and choose a resolution method.<br><br>
+                <div class="results-section">
 
-              <img src="images/returns flow 2.gif" alt="Returns flow demonstration" class="returns-flow-gif">
+
+
+                  <div class="results-section">
+
+                    <h4 class="goal-title">
+                      Optimised AI powered chat workflows
+                    </h4>
+                  
+                    <p class="project-title">
+                      We redesigned the returns support experience by building structured workflows inside FIN that collected essential information upfront, such as whether customers had already tried troubleshooting steps or if their kit was showing specific error codes. This meant that by the time a Customer Experience advisor picked up the return, they already had the full context needed to resolve issues much more quickly. We also integrated Intercom’s AI agent, FIN, by exposing MPB’s internal knowledge bases, allowing FIN to troubleshoot common issues independently and often resolve cases without needing to escalate to a human advisor. <br><br>
+                      </p>
+      
+              
+                  <img src="images/FIN workflows.png" alt="Returns flow demonstration" class="returns-flow-gif">
+                  <p class="goal-body">
+                    FIN powered workflow <br><br>
+                    </p>
+                </div>
+    
+
+      <div class="goals-wrapper">
+        <div class="goal-problem-container">
+  
+          <p class="goal-title" id="challenges" data-index-section>
+             Challenges
+          </p>
+  
+          <p class="goal-body">
+            • We had to deliver value sooner. To keep momentum and start improving the returns experience quickly, we split the work into Phase 1 and Phase 2. Phase 1 focused on delivering the most impactful self-serve capabilities early, while Phase 2 layered on more complex workflows and integrations.
+            <br><br>
+            • We needed to preserve essential human touchpoints. For some return reasons, such as faulty items, we created a hybrid process where automated workflows collected detailed information upfront before escalating to a Customer Experience advisor for resolution.<br><br>
+            • 	We were working with legacy systems. The returns infrastructure was not initially built to support self-serve functionality, so we had to design a solution robust enough to integrate with old processes without breaking them, while still accommodating new features.<br><br>
+          </p>
+
+    </section>
+
+    <section class="results-section">
+      <h2 class="h2" id="impact" data-index-section>
+
+        What's the impact?
+      </h4>
+      <p class="goal-body">
+        • 	Steady returns flow adoption. Over 3,400 customers initiated returns via the new self-serve flow within the first 21 weeks, with 80% progression rate  <br><br>
+        • 	61% of returns resolved without an agent's intervention <br><br>
+        • 	Customer experience team workload reduced, freeing time to focus on complex and high value issues<br><br>
+        • CSAT maintained at 86% for all returns conversations, matching the benchmark and proving customers didn't feel abandoned by automation.<br><br>
+        • Time to resolve and close a support ticket reduced from 11+ hours to 8-9 hours on average, with peak efficiency at 2-3 hours during optimal weeks.<br><br>
+        • Average replies per ticket dropped to 2.4 replies (vs. traditional 5+ reply conversations), meaning the Customer Experience team received enough information upfront regarding the customer's return.<br><br>
+        • Returns volume and values remained within expected historical ranges (~8-9% of GMV, 248 returns weekly), indicating no operational disruption or spike in user returns. indicating no operational disruption or spike in users return.<br><br> 
+      </p>
+
+     <!--<img class="nps-feedback" src="images/SS Returns metrics snapshot.png">
+     --> 
+
+      
+    
+                
+
+             <!-- <img src="images/returns flow 2.gif" alt="Returns flow demonstration" class="returns-flow-gif">
+              -->
               
             </div>
       </div>
 
 
         <div class="carousel-container">
-          <h4 class="goal-title">
-            What we shipped (UI snapshot)
+          <h4 class="goal-title" id="ui-snapshots" data-index-section>
+           UI Snapshots
           </h4>
             <div class="carousel-wrapper">
-                <div class="carousel-image-container" onclick="openImageModal('images/Phase 2/1.png')">
-                    <img src="images/Phase 2/1.png" alt="Self-serve returns interface" class="carousel-image">
+                <div class="carousel-image-container" onclick="openImageModal(this)">
+                    <img src="images/Account.png" alt="Self-serve returns interface" class="carousel-image">
                 </div>
-                <div class="carousel-image-container" onclick="openImageModal('images/Phase 2/2.png')">
-                    <img src="images/Phase 2/2.png" alt="Returns workflow" class="carousel-image">
+                <div class="carousel-image-container" onclick="openImageModal(this)">
+                    <img src="images/What would you like to return.png" alt="Returns workflow" class="carousel-image">
                 </div>
-                <div class="carousel-image-container" onclick="openImageModal('images/Phase 2/3.png')">
-                    <img src="images/Phase 2/3.png" alt="Returns confirmation" class="carousel-image">
+      
+                <div class="carousel-image-container" onclick="openImageModal(this)">
+                    <img src="images/Return selected.png" alt="Returns analytics" class="carousel-image">
                 </div>
-                <div class="carousel-image-container" onclick="openImageModal('images/Phase 2/4.png')">
-                    <img src="images/Phase 2/4.png" alt="Returns analytics" class="carousel-image">
-                </div>
-                <div class="carousel-image-container" onclick="openImageModal('images/Phase 2/5.png')">
-                    <img src="images/Phase 2/5.png" alt="Returns analytics" class="carousel-image">
-                </div>
-                <div class="carousel-image-container" onclick="openImageModal('images/Phase 2/6.png')">
-                    <img src="images/Phase 2/6.png" alt="Returns analytics" class="carousel-image">
-                </div>
+                
             </div>
         </div>
 
@@ -331,22 +386,57 @@
           }
 
           // Image modal functions
-          function openImageModal(imgSrc) {
+          function openImageModal(container) {
             const modal = document.getElementById("imageModal");
             const modalImg = document.getElementById("modalImage");
+            const sourceImg = container.querySelector("img");
             modal.style.display = "block";
-            modalImg.src = imgSrc;
+            modalImg.src = sourceImg ? sourceImg.src : "";
+            modalImg.alt = sourceImg ? sourceImg.alt : "";
           }
 
           function closeImageModal() {
             document.getElementById("imageModal").style.display = "none";
           }
+
+          document.addEventListener("DOMContentLoaded", function() {
+            const sections = Array.from(document.querySelectorAll("[data-index-section]"));
+            const indexLinks = Array.from(document.querySelectorAll(".index-link"));
+            const linkById = indexLinks.reduce((acc, link) => {
+              acc[link.getAttribute("href").substring(1)] = link;
+              return acc;
+            }, {});
+
+            const setActiveLink = (id) => {
+              if (!linkById[id]) {
+                return;
+              }
+              indexLinks.forEach((link) => link.classList.toggle("active", link === linkById[id]));
+            };
+
+            const observer = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    setActiveLink(entry.target.id);
+                  }
+                });
+              },
+              { rootMargin: "-20% 0px -60% 0px", threshold: 0.25 }
+            );
+
+            sections.forEach((section) => observer.observe(section));
+
+            if (sections[0]) {
+              setActiveLink(sections[0].id);
+            }
+          });
         </script>
     </section>
 
-    <section class="approach-section">
+   <!-- <section class="approach-section">
 
-      <h4 class="goal-title">
+      <h4 class="goal-title" id="approach" data-index-section>
 
         The approach
       </h4>
@@ -395,7 +485,7 @@
       <div class="goals-wrapper">
         <div class="goal-problem-container">
   
-          <p class="goal-title">
+          <p class="goal-title" id="takeaways" data-index-section>
              Takeaways
           </p>
   
@@ -407,13 +497,15 @@
             • 	Automation works best when it still feels human. The combination of self-serve workflows and selective human interaction created an experience that was both efficient and reassuring, giving customers confidence while reducing support dependency.<br><br>
           </p>
         </div>
+        -->
+        
 
       <div class="footer">
         <a href="https://www.linkedin.com/in/olakunlealabi/" target="_blank" rel="noopener noreferrer">
           LinkedIn
         </a> 
       
-        <a href="https://drive.google.com/file/d/1hYcCsP1S5SYkv0PbiqcjN5qZPnqZzcW7/view?usp=sharing
+        <a href="https://drive.google.com/file/d/1GpUEwzLhhN7H9EU-9IAqVrZh7BzELQi0/view?usp=sharing
         " target="_blank" rel="noopener noreferrer">
          Resume
         </a> 
@@ -427,5 +519,9 @@
         go back
       </a>
     </section>
+
+    </div>
+  </div>
+  <script defer src="../theme-toggle.js"></script>
 </body>
 </html>
