@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <script>
-    (function() {
+    (function () {
       var isMaintenancePage = /\/maintenance\.html$/.test(location.pathname);
       fetch('/maintenance.json', { cache: 'no-store' })
-        .then(function(r){ return r.ok ? r.json() : Promise.reject(); })
-        .then(function(cfg){ if (cfg && cfg.enabled && !isMaintenancePage) { location.replace('/maintenance.html'); } })
-        .catch(function(){});
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+        .then(function (cfg) { if (cfg && cfg.enabled && !isMaintenancePage) { location.replace('/maintenance.html'); } })
+        .catch(function () { });
     })();
   </script>
 
   <script>
-    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Cs Fs Pe Rs Ms capture Ve calculateEventProperties Ds register register_once register_for_session unregister unregister_for_session zs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty js As createPersonProfile Ns Is Us opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Os debug I Ls getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init Re Cs Fs Pe Rs Ms capture Ve calculateEventProperties Ds register register_once register_for_session unregister unregister_for_session zs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty js As createPersonProfile Ns Is Us opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Os debug I Ls getPageViewId captureTraceFeedback captureTraceMetric".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
     posthog.init('phc_R1gWAZHlS52IFGR0a8p0vGoJJO91FSMugCsXes7UJvl', {
-        api_host: 'https://eu.i.posthog.com',
-        defaults: '2025-05-24',
-        person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
+      api_host: 'https://eu.i.posthog.com',
+      defaults: '2025-05-24',
+      person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
     })
-</script>
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, nocache">
@@ -32,10 +33,13 @@
   <link rel="stylesheet" href="globalpagestyle.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
 
 
 </head>
+
 <body class="light-theme">
   <div class="theme-toggle-wrapper">
     <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
@@ -52,9 +56,9 @@
   <section class="hero-section">
     <h1 class="hero-title">
       <span class="naming">SwapSpace MVP
-     </span> <br> Designing for trust in a double-sided marketplace.
+      </span> <br> Designing for trust in a double-sided marketplace.
     </h1>
-    
+
     <div class="project-detail">
       <div class="detail">
         <p class="detail-title">
@@ -74,7 +78,7 @@
         </p>
       </div>
 
-      
+
       <script>
         function openModal() {
           document.getElementById("tldrModal").style.display = "block";
@@ -86,7 +90,7 @@
           document.body.classList.remove("modal-open");
         }
 
-        window.onclick = function(event) {
+        window.onclick = function (event) {
           if (event.target == document.getElementById("tldrModal")) {
             closeModal();
           }
@@ -112,95 +116,122 @@
 
     <div class="case-study-body">
 
-  <section class="goals-section">
+      <section class="goals-section">
 
-    <div class="goals-wrapper">
-      <div class="goal-problem-container">
+        <div class="goals-wrapper">
+          <div class="goal-problem-container">
 
-        <p class="goal-title" id="background" data-index-section>
-            Background
-        </p>
+            <p class="goal-title" id="background" data-index-section>
+              Background
+            </p>
 
-        <p class="goal-body">
-     <a href="Swap-space.com="_blank" rel="noopener noreferrer">SwapSpace</a> started as a passion project born from a simple observation: travel was becoming increasingly expensive, yet most homes sit empty for weeks at a time. I saw an opportunity to solve both problems simultaneously through home exchange.
-     While home exchange platforms existed, they often felt transactional, lacked trust mechanisms, and didn't provide the kind of experience that would make people feel confident swapping their homes with strangers. I wanted to build something different: a curated community where verified members could travel authentically and affordably.
-     As co-founder, I took on product strategy and design, building Swap-space from concept to launch. The challenge was designing for trust in a two-sided marketplace where the stakes were high (people's homes) while making the experience feel personal, not transactional.
-        </p>
-        <img class="project-img" src="images/Swapspace gif.gif" alt="Exchange flow preview">
-      </div>
-
-
-    <div class="goals-wrapper">
-      <div class="goal-problem-container">
-
-        <p class="goal-title" id="goal" data-index-section>
-            The goal
-        </p>
-
-        <p class="goal-body">
-          We aimed to create a member-only home exchange platform that makes travel more affordable and accessible while building a trusted community of verified members.
-          The platform needed to feel welcoming yet premium, making people confident enough to swap their homes with strangers while discovering authentic travel experiences they couldn't access through traditional accommodation.
-        </p>
-      </div>
-</section>
-    <!-- Solution highlights: what we delivered in Phase 2 -->
-    <section class="solution-section">
-      <div class="carousel-container">
-        <h2 class="h2" id="what-we-delivered" data-index-section>Designing for trust</h2>
-
-        <!-- Designing for trust -->
-        <h4 class="goal-title">An invite-only platform</h4>
-        <div class="results-section">
-          <p class="project-title">
-            The invite-only model was central to solving the biggest challenge in home exchange: trust. Instead of granting direct access to the platform, users had to fill out an application form. This allowed us to vet every member and curate the community from the start.
-          The application process wasn't just gatekeeping, it set expectations and ensured every member valued meaningful, affordable travel. By limiting our initial cohort to 100 founding members, we maintained quality and built a platform where people felt safe enough to hand over the keys to their homes.<br><br>
-          </p>
-          <img src="images/Swapspace website.gif" alt="Returns flow demonstration" class="returns-flow-gif">
-        </div>
-
-        <!-- Building for trust -IDV-->
-        <h4 class="goal-title">Trust as a design principle
-        </h4>
-        <div class="results-section">
-          <p class="project-title">
-            Trust and safety weren't add-ons, they were foundational to our product strategy. I designed identity verification as a core requirement. Every member must verify their identity with a government ID before they can initiate a swap, and verified members receive a visible badge on their profile.
-            By gating core functionality behind verification, we embedded trust directly into the user journey. This design decision ensured everyone in the community was accountable and real, giving members the confidence to hand over their keys.<br><br>
-          </p>
-          <img src="images/Member verification.gif" alt="Returns flow demonstration" class="returns-flow-gif">
-
-          <img src="images/Verification Swapspace.gif" alt="Returns flow demonstration" class="returns-flow-gif">
-        </div>
+            <p class="goal-body">
+              <a href="Swap-space.com=" _blank" rel="noopener noreferrer">SwapSpace</a> started as a passion project
+              born from a simple observation: travel was becoming increasingly expensive, yet most homes sit empty for
+              weeks at a time. I saw an opportunity to solve both problems simultaneously through home exchange.
+              While home exchange platforms existed, they often felt transactional, lacked trust mechanisms, and didn't
+              provide the kind of experience that would make people feel confident swapping their homes with strangers.
+              I wanted to build something different: a curated community where verified members could travel
+              authentically and affordably.
+              As co-founder, I took on product strategy and design, building Swap-space from concept to launch. The
+              challenge was designing for trust in a two-sided marketplace where the stakes were high (people's homes)
+              while making the experience feel personal, not transactional.
+            </p>
+            <img class="project-img" src="images/Swapspace gif.gif" alt="Exchange flow preview">
+          </div>
 
 
-        <!-- Delight -->
-         <h2 class="h2" id="delight" data-index-section>Introducing moments of delight</h2>
-         <div class="results-section">
-           <p class="project-title">
-            My passion for designing experiences filled with delight rather than feeling transactional meant that incorporating delightful moments into Swap-space was a natural step. This involved finding natural parts of the journey where delight could be injected unobtrusively. <br><br>
-           </p>
-           <img src="images/Delight.gif" alt="Returns flow demonstration" class="returns-flow-gif">
+          <div class="goals-wrapper">
+            <div class="goal-problem-container">
 
-           <p class="project-title">
-            The first place I injected delight was after a user created an account, when we wanted to inform them about their welcome credits. The thought process was to design a card that felt like a keycard, symbolizing access to explore the world or gain entry to a home. I explored different ideas in Figma Make, prompting until I landed on something I was happy with. <br><br>
-           </p>
-           <img src="images/Delight img.jpg" alt="Returns flow demonstration" class="returns-flow-gif">
+              <p class="goal-title" id="goal" data-index-section>
+                The goal
+              </p>
 
-          
-         </div>
+              <p class="goal-body">
+                We aimed to create a member-only home exchange platform that makes travel more affordable and accessible
+                while building a trusted community of verified members.
+                The platform needed to feel welcoming yet premium, making people confident enough to swap their homes
+                with strangers while discovering authentic travel experiences they couldn't access through traditional
+                accommodation.
+              </p>
+            </div>
+      </section>
+      <!-- Solution highlights: what we delivered in Phase 2 -->
+      <section class="solution-section">
+        <div class="carousel-container">
+          <h2 class="h2" id="what-we-delivered" data-index-section>Designing for trust</h2>
 
-
-           <!-- Impact & scale -->
-           <h2 class="h2" id="impact-scale" data-index-section>Impact &amp; Scale</h2>
+          <!-- Designing for trust -->
+          <h4 class="goal-title">An invite-only platform</h4>
           <div class="results-section">
             <p class="project-title">
-              Swap-space onboarded 100 founding members within the first month of launching, validating the demand for a more affordable and personal way to travel.
-Of those onboarded members, 45% listed their homes on the platform, demonstrating strong engagement and confidence in the community we built. This early adoption showed that our focus on trust, verification, and curation was working. Members weren't just signing up, they were actively participating and opening their homes to the community.
+              The invite-only model was central to solving the biggest challenge in home exchange: trust. Instead of
+              granting direct access to the platform, users had to fill out an application form. This allowed us to vet
+              every member and curate the community from the start.
+              The application process wasn't just gatekeeping, it set expectations and ensured every member valued
+              meaningful, affordable travel. By limiting our initial cohort to 100 founding members, we maintained
+              quality and built a platform where people felt safe enough to hand over the keys to their homes.<br><br>
+            </p>
+            <img src="images/Website walkthrough SS.gif" alt="Returns flow demonstration" class="returns-flow-gif">
+          </div>
+
+          <!-- Building for trust -IDV-->
+          <h4 class="goal-title">Trust as a design principle
+          </h4>
+          <div class="results-section">
+            <p class="project-title">
+              Trust and safety weren't add-ons, they were foundational to our product strategy. I designed identity
+              verification as a core requirement. Every member must verify their identity with a government ID before
+              they can initiate a swap, and verified members receive a visible badge on their profile.
+              By gating core functionality behind verification, we embedded trust directly into the user journey. This
+              design decision ensured everyone in the community was accountable and real, giving members the confidence
+              to hand over their keys.<br><br>
+            </p>
+            <img src="images/Member verification.gif" alt="Returns flow demonstration" class="returns-flow-gif">
+
+            <img src="images/Verification Swapspace.gif" alt="Returns flow demonstration" class="returns-flow-gif">
+          </div>
+
+
+          <!-- Delight -->
+          <h2 class="h2" id="delight" data-index-section>Introducing moments of delight</h2>
+          <div class="results-section">
+            <p class="project-title">
+              My passion for designing experiences filled with delight rather than feeling transactional meant that
+              incorporating delightful moments into Swap-space was a natural step. This involved finding natural parts
+              of the journey where delight could be injected unobtrusively. <br><br>
+            </p>
+            <img src="images/Delight.gif" alt="Returns flow demonstration" class="returns-flow-gif">
+
+            <p class="project-title">
+              The first place I injected delight was after a user created an account, when we wanted to inform them
+              about their welcome credits. The thought process was to design a card that felt like a keycard,
+              symbolizing access to explore the world or gain entry to a home. I explored different ideas in Figma Make,
+              prompting until I landed on something I was happy with. <br><br>
+            </p>
+            <img src="images/Delight img.jpg" alt="Returns flow demonstration" class="returns-flow-gif">
+
+
+          </div>
+
+
+          <!-- Impact & scale -->
+          <h2 class="h2" id="impact-scale" data-index-section>Impact &amp; Scale</h2>
+          <div class="results-section">
+            <p class="project-title">
+              Swap-space onboarded 100 founding members within the first month of launching, validating the demand for a
+              more affordable and personal way to travel.
+              Of those onboarded members, 45% listed their homes on the platform, demonstrating strong engagement and
+              confidence in the community we built. This early adoption showed that our focus on trust, verification,
+              and curation was working. Members weren't just signing up, they were actively participating and opening
+              their homes to the community.
               <br><br>
             </p>
-            <img src="images/SwapSpace walkthrough.gif" alt="Returns flow demonstration" class="returns-flow-gif">
+            <img src="images/Website walkthrough SS.gif" alt="Returns flow demonstration" class="returns-flow-gif">
           </div>
-      </div>
-    </section>
+        </div>
+      </section>
 
 
 
@@ -208,59 +239,60 @@ Of those onboarded members, 45% listed their homes on the platform, demonstratin
       <div class="footer">
         <a href="https://www.linkedin.com/in/olakunlealabi/" target="_blank" rel="noopener noreferrer">
           LinkedIn
-        </a> 
-      
+        </a>
+
         <a href="https://drive.google.com/file/d/1GpUEwzLhhN7H9EU-9IAqVrZh7BzELQi0/view?usp=sharing
         " target="_blank" rel="noopener noreferrer">
-         Resume
-        </a> 
-      
+          Resume
+        </a>
+
         <a href="https://medium.com/@The_Olakunle" target="_blank" rel="noopener noreferrer">
           Medium
-         </a> 
-        </div>
+        </a>
+      </div>
 
       <a href="../index.html" class="action-button">
         go back
       </a>
-    </section>
+      </section>
 
     </div>
   </div>
-<script>
-  // Highlight the current index item while scrolling
-  (function() {
-    var sectionEls = document.querySelectorAll('[data-index-section]');
-    var indexLinks = Array.from(document.querySelectorAll('.index-link'));
-    if (!sectionEls.length || !indexLinks.length || !('IntersectionObserver' in window)) return;
+  <script>
+      // Highlight the current index item while scrolling
+      (function () {
+        var sectionEls = document.querySelectorAll('[data-index-section]');
+        var indexLinks = Array.from(document.querySelectorAll('.index-link'));
+        if (!sectionEls.length || !indexLinks.length || !('IntersectionObserver' in window)) return;
 
-    var linkMap = indexLinks.reduce(function(map, link) {
-      var targetId = (link.getAttribute('href') || '').replace('#', '');
-      if (targetId) map[targetId] = link;
-      return map;
-    }, {});
+        var linkMap = indexLinks.reduce(function (map, link) {
+          var targetId = (link.getAttribute('href') || '').replace('#', '');
+          if (targetId) map[targetId] = link;
+          return map;
+        }, {});
 
-    var setActive = function(id) {
-      indexLinks.forEach(function(link) {
-        link.classList.toggle('active', link.getAttribute('href') === '#' + id);
-      });
-    };
+        var setActive = function (id) {
+          indexLinks.forEach(function (link) {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+          });
+        };
 
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          var id = entry.target.getAttribute('id');
-          if (id && linkMap[id]) setActive(id);
-        }
-      });
-    }, {
-      rootMargin: '-35% 0px -50% 0px',
-      threshold: [0, 0.25, 0.5, 0.75, 1]
-    });
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              var id = entry.target.getAttribute('id');
+              if (id && linkMap[id]) setActive(id);
+            }
+          });
+        }, {
+          rootMargin: '-35% 0px -50% 0px',
+          threshold: [0, 0.25, 0.5, 0.75, 1]
+        });
 
-    sectionEls.forEach(function(section) { observer.observe(section); });
-  })();
-</script>
+        sectionEls.forEach(function (section) { observer.observe(section); });
+      })();
+  </script>
   <script defer src="../theme-toggle.js"></script>
 </body>
+
 </html>
