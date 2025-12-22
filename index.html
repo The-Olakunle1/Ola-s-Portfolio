@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <script>
-    (function() {
+    (function () {
       var isMaintenancePage = /\/maintenance\.html$/.test(location.pathname);
       fetch('/maintenance.json', { cache: 'no-store' })
-        .then(function(r){ return r.ok ? r.json() : Promise.reject(); })
-        .then(function(cfg){ if (cfg && cfg.enabled && !isMaintenancePage) { location.replace('/maintenance.html'); } })
-        .catch(function(){});
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+        .then(function (cfg) { if (cfg && cfg.enabled && !isMaintenancePage) { location.replace('/maintenance.html'); } })
+        .catch(function () { });
     })();
   </script>
 
   <script>
-    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Cs Fs Pe Rs Ms capture Ve calculateEventProperties Ds register register_once register_for_session unregister unregister_for_session zs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty js As createPersonProfile Ns Is Us opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Os debug I Ls getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init Re Cs Fs Pe Rs Ms capture Ve calculateEventProperties Ds register register_once register_for_session unregister unregister_for_session zs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty js As createPersonProfile Ns Is Us opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Os debug I Ls getPageViewId captureTraceFeedback captureTraceMetric".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
     posthog.init('phc_R1gWAZHlS52IFGR0a8p0vGoJJO91FSMugCsXes7UJvl', {
-        api_host: 'https://eu.i.posthog.com',
-        defaults: '2025-05-24',
-        person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
+      api_host: 'https://eu.i.posthog.com',
+      defaults: '2025-05-24',
+      person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
     })
-</script>
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, nocache">
@@ -36,6 +37,7 @@
 
 
 </head>
+
 <body class="light-theme">
   <div class="theme-toggle-wrapper">
     <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
@@ -47,76 +49,89 @@
   </div>
   <div id="mobile-blocker">
     <div class="mobile-blocker-content">
-      Heads up! this portfolio’s had one too many coffees and only runs on desktop. Pop over to your laptop to see it in full glory 😊
+      Heads up! this portfolio’s had one too many coffees and only runs on desktop. Pop over to your laptop to see it in
+      full glory 😊
     </div>
   </div>
   <section class="hero-section">
     <h1 class="hero-title">
-     Olakunle <span class="naming">[ooh-lah-KOON-leh]</span>
+      Olakunle <span class="naming">[ooh-lah-KOON-leh]</span>
     </h1>
     <p class="last-updated">
       last updated Dec 14th, 2025
     </p>
-  
+
     <p class="hero-body">
-      I'm a generalist/PM hybrid type of Product Designer. I am obsessed with the way the web works and crafting great user experiences.
-      I am most motivated when I believe in the problem I'm solving for and in teams who value design, cross-functional collaboration and are impact driven.
+      I'm a generalist/PM hybrid type of Product Designer. I am obsessed with the way the web works and crafting great
+      user experiences.
+      I am most motivated when I believe in the problem I'm solving for and in teams who value design, cross-functional
+      collaboration and are impact driven.
     </p>
 
     <p class="hero-body">
-      I'm currently a UX Designer at <a class="current-work" href="https://www.mpb.com" target="_blank" rel="noopener noreferrer">MPB.com</a> where I help create solutions that empower over 1 million creatives to buy, sell and trade photo & video kit.  
-      <br>I'm also a co-founder at <a class="current-work" href="https://swap-space.com" target="_blank" rel="noopener noreferrer">Swap-space.com</a>, a members-only home swapping platform, where I oversee Product and Design
+      I'm currently a UX Designer at <a class="current-work" href="https://www.mpb.com" target="_blank"
+        rel="noopener noreferrer">MPB.com</a> where I help create solutions that empower over 1 million creatives to
+      buy, sell and trade photo & video kit.
+      <br>I'm also a co-founder at <a class="current-work" href="https://swap-space.com" target="_blank"
+        rel="noopener noreferrer">Swap-space.com</a>, a members-only home swapping platform, where I oversee Product and
+      Design
     </p>
- 
 
-   <p class="hero-body">
-    When I'm not building, you'll find me cycling along the Brighton seafront, camera in hand. </p>
+    <p class="hero-body"> Check out <a href="https://playground.olakunlealabi.com/" class="playground-button">Playground</a>
+      to see some of my design and micro interaction explorations.
+    </p>
+
+
+    <p class="hero-body">
+      When I'm not building, you'll find me cycling along the Brighton seafront, camera in hand. </p>
   </section>
 
   <section class="projects-section">
 
-    <div class="projects-wrapper"
-    >
-    
-        <div class="project-title">
+    <div class="projects-wrapper">
+
+      <div class="project-title">
         Projects
-        </div>
+      </div>
 
-        <div class="projects-container">
-          <!-- Project: Self serve returns (Phase 1) -->
-          <a href="projects/self-serve-returns.html" class="individual-project">
-            <h4 class="ind-proj-title">
-              <img class="project-img" src="projects/images/Phase 1  returns.gif" alt="Self serve returns Phase 1 preview">
-              <div class="project-header">
-                <span class="project-link">Self serve returns (Phase 1)</span>
-                <p class="hero-body">Reducing customer contact by enabling seamless, on-platform returns initiation</p>
-              </div>
-            </h4>
-          </a>
 
-          <!-- Project: Self serve returns (Phase 2) -->
-          <a href="projects/Returns phase2.html" class="individual-project">
-            <h4 class="ind-proj-title">
-              <img class="project-img" src="projects/images/Returns phase 2.gif" alt="Self serve returns Phase 2 preview">
-              <div class="project-header">
-                <span class="project-link">Self serve returns (Phase 2)</span>
-                <p class="hero-body">Empowering Customers to Complete Returns End-to-End, Independently</p>
-              </div>
-            </h4>
-          </a>
 
-          <!-- Project: SwapSpace -->
-          <a href="projects/Swap-space.html" class="individual-project">
-            <h4 class="ind-proj-title">
-              <img class="project-img" src="projects/images/Swapspace gif.gif" alt="SwapSpace preview">
-              <div class="project-header">
-                <span class="project-link">SwapSpace | Empowering Affordable Travel</span>
-                <p class="hero-body">Designing for Trust in a members-only home swapping platform.</p>
-              </div>
-            </h4>
-          </a>
+      <div class="projects-container">
+        <!-- Project: Self serve returns (Phase 1) -->
+        <a href="projects/self-serve-returns.html" class="individual-project">
+          <h4 class="ind-proj-title">
+            <img class="project-img" src="projects/images/Phase 1  returns.gif"
+              alt="Self serve returns Phase 1 preview">
+            <div class="project-header">
+              <span class="project-link">Self serve returns (Phase 1)</span>
+              <p class="hero-body">Reducing customer contact by enabling seamless, on-platform returns initiation</p>
+            </div>
+          </h4>
+        </a>
 
-          <!-- Project: Sell Balance 
+        <!-- Project: Self serve returns (Phase 2) -->
+        <a href="projects/Returns phase2.html" class="individual-project">
+          <h4 class="ind-proj-title">
+            <img class="project-img" src="projects/images/Returns phase 2.gif" alt="Self serve returns Phase 2 preview">
+            <div class="project-header">
+              <span class="project-link">Self serve returns (Phase 2)</span>
+              <p class="hero-body">Empowering Customers to Complete Returns End-to-End, Independently</p>
+            </div>
+          </h4>
+        </a>
+
+        <!-- Project: SwapSpace -->
+        <a href="projects/Swap-space.html" class="individual-project">
+          <h4 class="ind-proj-title">
+            <img class="project-img" src="projects/images/Swapspace gif.gif" alt="SwapSpace preview">
+            <div class="project-header">
+              <span class="project-link">SwapSpace | Empowering Affordable Travel</span>
+              <p class="hero-body">Designing for Trust in a members-only home swapping platform.</p>
+            </div>
+          </h4>
+        </a>
+
+        <!-- Project: Sell Balance 
           <a href="projects/Balance.html" class="individual-project">
             <h4 class="ind-proj-title">
               <img class="project-img" src="projects/images/Phase 1  returns.gif" alt="Sell Balance preview">
@@ -127,7 +142,7 @@
             </h4>
           </a> -->
 
-          <!--
+        <!--
           <a href="projects/Sell-page.html" class="individual-project">
             <h4 class="ind-proj-title">
               <div class="project-header">
@@ -145,50 +160,81 @@
           </a>
           -->
 
+      </div>
+
+
+
+
+      <section class="side-projects">
+
+        <div class="project-title">
+          Writings and projects
         </div>
 
 
-        
+        <ul>
+          <li><a
+              href="https://medium.com/@The_Olakunle/designing-for-sweat-cases-situations-you-didnt-think-your-users-will-be-in-515fcfdf8c79"
+              target="_blank" rel="noopener noreferrer">Designing for edge cases: situations you didn't think your users
+              will be in</a></li>
 
-  <section class="side-projects">
+          <li><a href="https://medium.com/@The_Olakunle/building-a-macos-app-as-a-designer-02753f042824" target="_blank"
+              rel="noopener noreferrer">Building a macOS app as a Designer</a></li>
 
-    <div class="project-title">
-            Writings and projects
-        </div>
+          <li><a
+              href="https://medium.com/@The_Olakunle/roses-are-red-violets-are-blue-data-is-king-heres-what-you-should-know-ed94bf35c39a"
+              target="_blank" rel="noopener noreferrer">Roses are red, violets are blue, data is king, here's what you
+              should know</a></li>
+          <li><a href="https://medium.com/@The_Olakunle/endowment-effect-the-rental-bike-analogy-b1b64d382b45"
+              target="_blank" rel="noopener noreferrer">Endowment effect: The rental bike analogy</a></li>
+          <li class="hero-body">
+            I built <a href="https://github.com/The-Olakunle/Speaker-Notes/releases/tag/speakernotesv2" target="_blank"
+              rel="noopener noreferrer">Speaker Note</a>. A macOS native app that lets you write and organise your
+            speaker notes and present smoothly through a teleprompter window.
+          </li>
+        </ul>
+        </li>
+      </section>
 
-
-  <ul>
-    <li><a href="https://medium.com/@The_Olakunle/designing-for-sweat-cases-situations-you-didnt-think-your-users-will-be-in-515fcfdf8c79" target="_blank" rel="noopener noreferrer">Designing for edge cases: situations you didn't think your users will be in</a></li>
-
-    <li><a href="https://medium.com/@The_Olakunle/building-a-macos-app-as-a-designer-02753f042824" target="_blank" rel="noopener noreferrer">Building a macOS app as a Designer</a></li>
-
-    <li><a href="https://medium.com/@The_Olakunle/roses-are-red-violets-are-blue-data-is-king-heres-what-you-should-know-ed94bf35c39a" target="_blank" rel="noopener noreferrer">Roses are red, violets are blue, data is king, here's what you should know</a></li>
-    <li><a href="https://medium.com/@The_Olakunle/endowment-effect-the-rental-bike-analogy-b1b64d382b45" target="_blank" rel="noopener noreferrer">Endowment effect: The rental bike analogy</a></li>
-    <li class="hero-body">
-      I built  <a href="https://github.com/The-Olakunle/Speaker-Notes/releases/tag/speakernotesv2" target="_blank" rel="noopener noreferrer">Speaker Note</a>. A macOS native app that lets you write and organise your speaker notes and present smoothly through a teleprompter window.
-    </li>
-  </ul>
-</li>
   </section>
 
-  </section>
-  
   <div class="footer">
-  <a href="https://www.linkedin.com/in/olakunlealabi/" target="_blank" rel="noopener noreferrer">
-    LinkedIn
-  </a> 
+    <a href="https://www.linkedin.com/in/olakunlealabi/" target="_blank" rel="noopener noreferrer">
+      LinkedIn
+    </a>
 
-  <a href="https://drive.google.com/file/d/1GpUEwzLhhN7H9EU-9IAqVrZh7BzELQi0/view?usp=sharing
+    <a href="https://drive.google.com/file/d/1GpUEwzLhhN7H9EU-9IAqVrZh7BzELQi0/view?usp=sharing
   " target="_blank" rel="noopener noreferrer">
-   Resume
-  </a> 
+      Resume
+    </a>
 
-  <a href="https://medium.com/@The_Olakunle" target="_blank" rel="noopener noreferrer">
-    Medium
-   </a> 
+    <a href="https://medium.com/@The_Olakunle" target="_blank" rel="noopener noreferrer">
+      Medium
+    </a>
+  </div>
+
+  <div id="playground-modal" class="modal" aria-hidden="true" style="display: none;">
+    <div class="modal-backdrop"></div>
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <h3 class="modal-title">Playground</h3>
+        <button class="modal-close" aria-label="Close playground">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-content">
+        <iframe id="playground-iframe" src="" title="Playground" frameborder="0"></iframe>
+      </div>
+    </div>
   </div>
 
   <script defer src="theme-toggle.js"></script>
+  <script defer src="playground.js"></script>
   <script defer src="https://vercel.com/analytics/script.js"></script>
 </body>
+
 </html>
